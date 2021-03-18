@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>Login</h1>
+<form method="POST" action=''>
+    <p>
+        <label for="username">Usuário </label>
+        <input name="user" id="username" type="text">
+    </p>
+    
+    <p>
+        <label for="password">Senha </label>
+        <input name="pass" id="password" type="password">
+    </p>
+    <p>
+        <label for="remember">Lembre-me</label>
+        <input type="checkbox" id='remember' name="remember">
+    </p>
+    <button>
+        ENTRAR
+    </button>
+
+</form>
+
+
+{% endblock %}
