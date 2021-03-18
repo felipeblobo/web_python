@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web com Python</title>
+    <title>{{ title }} - Microblog</title>
   </head>
   <body>
     <div>
       <h1>Web com Python</h1>
-      <p>Testando que aprendi.</p>
+      <p>Esse é o blog de {{ user.username }}</p>
+    </div>
+    <div>
+      {% for post in posts %}
+        <p>{{post.author.username}} disse: <b>{{ post.body }} </b></p>
+      {% endfor %}
     </div>
   </body>
 </html>
